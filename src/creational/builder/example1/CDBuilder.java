@@ -1,5 +1,8 @@
 package creational.builder.example1;
 
+import creational.builder.example1.companies.Samsung;
+import creational.builder.example1.companies.Sony;
+
 public class CDBuilder {
 	
 	public CDType buildSonyCD() {

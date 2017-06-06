@@ -1,4 +1,6 @@
-package creational.builder.example1;
+package creational.builder.example1.companies;
+
+import creational.builder.example1.Company;
 
 public class Samsung extends Company {
 	
