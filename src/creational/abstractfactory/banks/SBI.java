@@ -1,6 +1,6 @@
-package creational.abstractfactory;
+package creational.abstractfactory.banks;
 
-class SBI implements Bank {
+public class SBI implements Bank {
 
 	private final String BNAME;
 

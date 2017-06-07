@@ -1,6 +1,6 @@
-package creational.abstractfactory;
+package creational.abstractfactory.banks;
 
-class ICICI implements Bank {
+public class ICICI implements Bank {
 
 	private final String BNAME;
 

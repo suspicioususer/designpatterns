@@ -1,10 +1,10 @@
-package creational.abstractfactory;
+package creational.abstractfactory.loans;
 
-abstract class Loan {
+public abstract class Loan {
 
 	protected double rate;
 
-	abstract void getInterestRate(double rate);
+	public abstract void getInterestRate(double rate);
 
 	public void calculateLoanPayment(double loanamount, int years) {
 

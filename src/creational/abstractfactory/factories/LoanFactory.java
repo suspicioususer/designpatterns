@@ -1,6 +1,12 @@
-package creational.abstractfactory;
+package creational.abstractfactory.factories;
 
-class LoanFactory extends AbstractFactory {
+import creational.abstractfactory.banks.Bank;
+import creational.abstractfactory.loans.BussinessLoan;
+import creational.abstractfactory.loans.EducationLoan;
+import creational.abstractfactory.loans.HomeLoan;
+import creational.abstractfactory.loans.Loan;
+
+public class LoanFactory extends AbstractFactory {
 
 	public Bank getBank(String bank) {
 		return null;
