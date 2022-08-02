@@ -1,5 +1,7 @@
 package creational.factorymethod.util;
 
+import java.util.List;
+
 public class DateUtil {
 
 	public static boolean isValidDate(String day, String month, String year) {
@@ -20,7 +22,7 @@ public class DateUtil {
 			} else {
 				c += 2000; // 2000+
 			}
-			
+
 			if (b == 2) { // february control
 				if (a > 29) {
 					return false;
@@ -31,9 +33,12 @@ public class DateUtil {
 						return false;
 					}
 				}
+			} else if (List.of(4, 6, 9, 11).contains(b) && a == 31) { // thirty day control
+				return false;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+			return false;
 		}
 		return true;
 	}
