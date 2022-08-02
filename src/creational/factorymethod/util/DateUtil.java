@@ -4,7 +4,7 @@ import java.util.List;
 
 public class DateUtil {
 
-	public static boolean isValidDate(String day, String month, String year) {
+	public static boolean isValidDate(String day, String month, String year) { // control for dd/MM/yyy pattern.
 		try {
 			int a = Integer.parseInt(day);
 			if (a < 1 || a > 31) {
